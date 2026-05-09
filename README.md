@@ -1,27 +1,116 @@
-only works in places where you can open github codespaces
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=27&pause=1000&color=2E9AFE&center=true&vCenter=true&width=435&lines=MRH-G2Ray+%7C+Version+1.0.0" alt="MRH-G2Ray Title" />
+</p>
 
-## setup
-1. fork the repo
-2. click the green "Code" button above, go to the "Codespaces" tab, and click "Create codespace on main."
+<p align="center">
+  <img src="https://img.shields.io/badge/Release-Stable-2E9AFE?style=for-the-badge&logo=github"/>
+  <img src="https://img.shields.io/badge/Version-1.0.0--MRH-00C853?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/License-MIT-FFC107?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Platform-GitHub%20Codespaces-181717?style=for-the-badge&logo=github"/>
+  <img src="https://img.shields.io/badge/Maintainer-MRH-FF69B4?style=for-the-badge"/>
+</p>
 
-## how to use
-- wait some minutes for the codespace. it needs some time to setup everything.
-- once it's ready, your vless link will be printed right there in terminal tab
-![terminal](./docs/screenshot.png)
+<p align="center">
+  <b>🌐 هوشمندترین، سریع‌ترین و پایدارترین نسخه از پروکسی G2Ray برای دسترسی آزاد به اینترنت 🌐</b>
+</p>
 
-- copy the link into your v2rayng (or your fav proxy app)
+<p align="center">
+  <a href="#-نسخه-فارسی">📖 راهنمای فارسی</a> •
+  <a href="#-english-guide">📖 English Guide</a> •
+  <a href="#-bilingual-guide-faen">🌍 راهنمای دو زبانه (FA/EN)</a>
+</p>
 
-## notes
-- github gives you 120 free hours per cpu cores for a month
-- so if your codespace has 2 cores, the limit will be 60 hours per month
-- remember to stop the codespace when you aren't using it, to save your hours
+---
 
-tested on shecan (free plan). so if you can see any of these ips, it'll work for you. if not, try other datacenters/ISPs:
-- 63.141.252.203
-- 50.7.5.83
-- 63.141.252.203
-- 94.130.50.12
+## 💝 حمایت / Support
 
-## support the project
-- [buy me a coffee](https://www.buymeacoffee.com/amiremohamadi)
-- eth: `0x5724c38100b2aE3d2547974f46D0f2f49eb2D152`
+اگر این ابزار به شما کمک کرد / If this tool helped you:
+
+**BNB (BEP-20) - Ethereum - Arbitrum - Base:**
+`0x3A90B058E51deeA95dd8912b4bA71c4b159Ec582`
+
+**USDT / USDC / DAI (BEP-20 / ERC-20 / Polygon):**
+`0x3A90B058E51deeA95dd8912b4bA71c4b159Ec582`
+
+> حمایت مالی کاملاً اختیاری است / Support is optional
+
+---
+
+<h2 dir="rtl" align="right">🇮🇷 <a id="-نسخه-فارسی"></a>نسخه فارسی</h2>
+
+<div dir="rtl">
+
+### 🚀 پروژه MRH-G2Ray چیست؟
+
+**MRH-G2Ray** یک نسخه اختصاصی، بهینه و فوق‌العاده پایدار از پروژه محبوب `g2ray` است. این ابزار با بهره‌گیری از سرویس **GitHub Codespaces**، یک پروکسی قدرتمند **VLESS** را در کمتر از ۵ دقیقه روی محیط ابری رایگان گیت‌هاب راه‌اندازی می‌کند.
+
+**مزایای اختصاصی نسخه MRH:**
+- ✅ **کاملاً رایگان** تا سقف ۶۰ ساعت در ماه (قابل افزایش)
+- ✅ **بدون نیاز به سرور یا دامنه شخصی**
+- ✅ **بدون نیاز به دانش فنی پیشرفته**
+- ✅ **پایداری بالا و اتصال سریع**
+- ✅ **قابلیت شخصی‌سازی برای کاربران حرفه‌ای**
+
+---
+
+### 📝 راهنمای گام به گام برای مبتدیان (حتی بدون حساب گیت‌هاب)
+
+#### مرحله ۱: ساخت اکانت رایگان گیت‌هاب
+1. به وب‌سایت [GitHub.com](https://github.com) بروید.
+2. روی دکمه **Sign up** کلیک کنید.
+3. یک ایمیل معتبر، رمز عبور قوی و نام کاربری مناسب انتخاب کنید.
+4. کد تأیید ۶ رقمی ارسال شده به ایمیل خود را وارد کنید.
+5. **تبریک!** شما یک اکانت گیت‌هاب دارید.
+
+> ⚠️ **هشدار امنیتی مهم:** توصیه می‌شود برای استفاده از این روش، یک **اکانت دوم (سوپاپ اطمینان)** بسازید تا از اکانت اصلی شما محافظت شود.
+
+#### مرحله ۲: فورک (کپی) کردن این پروژه
+1. در بالای همین صفحه، روی دکمه **Fork** کلیک کنید.
+2. نام مخزن را به دلخواه تغییر دهید (مثلاً `My-G2Ray`).
+3. روی **Create fork** کلیک کنید.
+
+#### مرحله ۳: راه‌اندازی محیط Codespace
+1. در مخزن فورک شده خود، روی دکمه سبز **Code** کلیک کنید.
+2. برگه **Codespaces** را انتخاب کنید.
+3. روی دکمه **Create codespace on main** کلیک کنید.
+4. چند دقیقه صبر کنید تا محیط ابری شما ساخته شود.
+
+#### مرحله ۴: دریافت لینک اتصال (VLESS)
+- پس از اتمام بارگذاری، یک خط فرمان (Terminal) در پایین صفحه ظاهر می‌شود.
+- بعد از چند لحظه، یک لینک شروع شده با `vless://` در آن نمایش داده می‌شود.
+- **کل لینک را کپی کنید.**
+
+#### مرحله ۵: اتصال به اینترنت آزاد
+لینک کپی شده را در یکی از نرم‌افزارهای زیر وارد کنید:
+- **V2rayNG** (اندروید)
+- **Hiddify** (اندروید، ویندوز، مک، لینوکس)
+- **Streisand** (ویندوز، مک، لینوکس)
+- **Nekoray** (ویندوز، لینوکس، مک)
+
+---
+
+### ⏰ مدیریت ساعات رایگان گیت‌هاب
+
+گیت‌هاب به هر اکانت رایگان ماهانه **۱۲۰ core-hour** هدیه می‌دهد:
+
+| نوع ماشین | تعداد هسته | ساعت مصرف واقعی در ماه |
+|:---:|:---:|:---:|
+| استاندارد (پیش‌فرض) | ۲ هسته | **۶۰ ساعت** |
+| اقتصادی (نیازمند تغییر دستی) | ۱ هسته | **۱۲۰ ساعت** |
+
+**نکات مدیریت مصرف:**
+- ✅ همیشه بعد از اتمام کار، کداسپیس را **Stop** یا **Delete** کنید.
+- ✅ **Stop** فقط مصرف ساعت را متوقف می‌کند، اما فضای ذخیره‌سازی مصرف می‌کند.
+- ✅ **Delete** همه چیز را آزاد می‌کند (ساعت و فضا).
+- ✅ برای استفاده بیشتر، می‌توانید از چند اکانت گیت‌هاب مجزا استفاده کنید.
+
+---
+
+### 🛠️ بخش تخصصی (برای کاربران حرفه‌ای)
+
+#### تغییر به ماشین ۱ هسته‌ای (افزایش ساعت به ۱۲۰ ساعت):
+فایل `.devcontainer/devcontainer.json` را ویرایش کرده و این بخش را اضافه کنید:
+```json
+"hostRequirements": {
+   "cpus": 1
+}
