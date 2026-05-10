@@ -1,23 +1,13 @@
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=27&pause=1000&color=2E9AFE&center=true&vCenter=true&width=435&lines=MRH-G2Ray+%7C+Version+1.0.0" alt="MRH-G2Ray Title" />
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Release-Stable-2E9AFE?style=for-the-badge&logo=github"/>
+  <img src="https://img.shields.io/badge/MRH-G2Ray-0057B3?style=for-the-badge&logo=github&logoColor=white"/>
   <img src="https://img.shields.io/badge/Version-1.0.0--MRH-00C853?style=for-the-badge"/>
   <img src="https://img.shields.io/badge/License-MIT-FFC107?style=for-the-badge"/>
   <img src="https://img.shields.io/badge/Platform-GitHub%20Codespaces-181717?style=for-the-badge&logo=github"/>
-  <img src="https://img.shields.io/badge/Maintainer-MRH-FF69B4?style=for-the-badge"/>
 </p>
 
 <p align="center">
-  <b>🌐 هوشمندترین، سریع‌ترین و پایدارترین نسخه از پروکسی G2Ray برای دسترسی آزاد به اینترنت 🌐</b>
-</p>
-
-<p align="center">
-  <a href="#-نسخه-فارسی">📖 راهنمای فارسی</a> •
   <a href="#-english-guide">📖 English Guide</a> •
-  <a href="#-bilingual-guide-faen">🌍 راهنمای دو زبانه (FA/EN)</a>
+  <a href="#-راهنمای-فارسی">📖 راهنمای فارسی</a>
 </p>
 
 ---
@@ -36,81 +26,204 @@
 
 ---
 
-<h2 dir="rtl" align="right">🇮🇷 <a id="-نسخه-فارسی"></a>نسخه فارسی</h2>
+<h2 align="left">🇬🇧 <a id="-english-guide"></a>English Guide</h2>
+
+<div dir="ltr">
+
+### 🚀 What is this project?
+
+**MRH-G2Ray** is a wrapper around the `g2ray` project that leverages **GitHub Codespaces** to run a VLESS proxy on GitHub's cloud infrastructure.
+
+- All processing and traffic pass through **GitHub servers**.
+- No need for a personal VPS or domain.
+- Not restricted by geographical limitations or sanctions (provided initial access to GitHub exists).
+
+---
+
+### 📝 Step-by-Step Guide (For Beginners)
+
+#### Step 1: Create a GitHub Account
+1. Go to [GitHub.com](https://github.com)
+2. Click **Sign up**
+3. Choose email, password, and username
+4. Enter the verification code
+
+> ⚠️ **Security Recommendation:** Use a secondary (burner) GitHub account to protect your main account.
+
+#### Step 2: Fork This Repository
+1. Click **Fork** at the top of this page
+2. Choose a name (e.g., `My-Proxy`)
+3. Click **Create fork**
+
+#### Step 3: Set Up a Codespace
+1. In your forked repo, click the green **Code** button
+2. Select **Codespaces** tab → **Create codespace on main**
+3. Wait a few minutes
+
+#### Step 4: Get Your VLESS Link
+- A link starting with `vless://` will appear in the terminal at the bottom
+- Copy the entire link
+
+#### Step 5: Connect
+Paste the link into one of these:
+- **V2rayNG** (Android)
+- **Hiddify** (Android, Windows, Mac)
+- **Streisand** (Windows, Mac)
+- **Nekobox** (Windows)
+
+---
+
+### ⏰ Managing Quotas (Technical)
+
+Free GitHub accounts receive **60 hours per month** on the default 2-core machine. **1-core machines are NOT available.**
+
+#### How to Avoid Wasting Quota (Hours & Storage):
+
+| Action | Effect on Hours | Effect on Storage |
+| :--- | :---: | :---: |
+| **Stop** | ✅ Stops | ❌ Still consumed |
+| **Delete** | ✅ Stops | ✅ Stops |
+
+- **Stop:** Halts the machine. Your files remain on GitHub's disk, consuming your 15 GB storage quota.
+- **Delete:** Completely removes the cloud environment, freeing both compute hours and storage space.
+
+> ✅ **Best Practice:** Delete your Codespace after each session and recreate it next time.
+
+---
+
+### 🛠️ Pro Section (Advanced Users)
+
+#### Change Minimum Machine Requirements (If Needed):
+Edit `.devcontainer/devcontainer.json` and add:
+```json
+"hostRequirements": {
+   "cpus": 4,
+   "memory": "8gb",
+   "storage": "64gb"
+}
+```
+> Note: More powerful machines have lower free quotas (e.g., 4-core = 30 hours/month).
+
+#### Sync with Upstream (Get Updates):
+Click **Sync fork** on your forked repository's page.
+
+---
+
+### ⚠️ Limitations
+
+| Item | Value |
+| :--- | :---: |
+| Free monthly hours (2-core) | 60 hours |
+| Free storage | 15 GB |
+| Minimum available machine | 2 cores |
+
+---
+
+<p align="center">
+  <b>MRH-G2Ray</b><br/>
+  <sub>Version 1.0.0</sub>
+</p>
+
+</div>
+
+---
+
+<h2 dir="rtl" align="right">🇮🇷 <a id="-راهنمای-فارسی"></a>راهنمای فارسی</h2>
 
 <div dir="rtl">
 
-### 🚀 پروژه MRH-G2Ray چیست؟
+### 🚀 این پروژه چیست؟
 
-**MRH-G2Ray** یک نسخه اختصاصی، بهینه و فوق‌العاده پایدار از پروژه محبوب `g2ray` است. این ابزار با بهره‌گیری از سرویس **GitHub Codespaces**، یک پروکسی قدرتمند **VLESS** را در کمتر از ۵ دقیقه روی محیط ابری رایگان گیت‌هاب راه‌اندازی می‌کند.
+**MRH-G2Ray** پوسته‌ای (Wrapper) بر روی پروژه `g2ray` است که با استفاده از **زیرساخت ابری GitHub Codespaces**، یک Proxy مبتنی بر پروتکل VLESS را در محیط ابری گیت‌هاب راه‌اندازی می‌کند.
 
-**مزایای اختصاصی نسخه MRH:**
-- ✅ **کاملاً رایگان** تا سقف ۶۰ ساعت در ماه (قابل افزایش)
-- ✅ **بدون نیاز به سرور یا دامنه شخصی**
-- ✅ **بدون نیاز به دانش فنی پیشرفته**
-- ✅ **پایداری بالا و اتصال سریع**
-- ✅ **قابلیت شخصی‌سازی برای کاربران حرفه‌ای**
+- تمام پردازش‌ها و ترافیک از طریق **سرورهای گیت‌هاب** عبور می‌کند.
+- نیازی به تهیه سرور یا دامنه شخصی نیست.
+- اجرای آن محدود به مناطق جغرافیایی خاص یا تحریم‌ها نمی‌شود (به شرط دسترسی اولیه به گیت‌هاب).
 
 ---
 
-### 📝 راهنمای گام به گام برای مبتدیان (حتی بدون حساب گیت‌هاب)
+### 📝 راهنمای گام به گام (برای مبتدیان)
 
-#### مرحله ۱: ساخت اکانت رایگان گیت‌هاب
-1. به وب‌سایت [GitHub.com](https://github.com) بروید.
-2. روی دکمه **Sign up** کلیک کنید.
-3. یک ایمیل معتبر، رمز عبور قوی و نام کاربری مناسب انتخاب کنید.
-4. کد تأیید ۶ رقمی ارسال شده به ایمیل خود را وارد کنید.
-5. **تبریک!** شما یک اکانت گیت‌هاب دارید.
+#### مرحله ۱: ساخت اکانت گیت‌هاب
+1. به [GitHub.com](https://github.com) بروید
+2. روی **Sign up** کلیک کنید
+3. ایمیل، رمز عبور و نام کاربری انتخاب کنید
+4. کد تأیید ارسال‌شده را وارد کنید
 
-> ⚠️ **هشدار امنیتی مهم:** توصیه می‌شود برای استفاده از این روش، یک **اکانت دوم (سوپاپ اطمینان)** بسازید تا از اکانت اصلی شما محافظت شود.
+> ⚠️ **توصیه امنیتی:** از یک اکانت دوم (فرعی) استفاده کنید.
 
-#### مرحله ۲: فورک (کپی) کردن این پروژه
-1. در بالای همین صفحه، روی دکمه **Fork** کلیک کنید.
-2. نام مخزن را به دلخواه تغییر دهید (مثلاً `My-G2Ray`).
-3. روی **Create fork** کلیک کنید.
+#### مرحله ۲: فورک (کپی) کردن این مخزن
+1. روی دکمه **Fork** در بالای صفحه کلیک کنید
+2. نام دلخواه (مثلاً `My-Proxy`) انتخاب کنید
+3. **Create fork** را بزنید
 
-#### مرحله ۳: راه‌اندازی محیط Codespace
-1. در مخزن فورک شده خود، روی دکمه سبز **Code** کلیک کنید.
-2. برگه **Codespaces** را انتخاب کنید.
-3. روی دکمه **Create codespace on main** کلیک کنید.
-4. چند دقیقه صبر کنید تا محیط ابری شما ساخته شود.
+#### مرحله ۳: راه‌اندازی Codespace
+1. در مخزن فورک‌شده، دکمه سبز **Code** را بزنید
+2. برگه **Codespaces** → **Create codespace on main**
+3. چند دقیقه صبر کنید
 
-#### مرحله ۴: دریافت لینک اتصال (VLESS)
-- پس از اتمام بارگذاری، یک خط فرمان (Terminal) در پایین صفحه ظاهر می‌شود.
-- بعد از چند لحظه، یک لینک شروع شده با `vless://` در آن نمایش داده می‌شود.
-- **کل لینک را کپی کنید.**
+#### مرحله ۴: دریافت لینک VLESS
+- لینک شروع‌شونده با `vless://` در ترمینال پایین صفحه نمایش داده می‌شود
+- کل لینک را کپی کنید
 
-#### مرحله ۵: اتصال به اینترنت آزاد
-لینک کپی شده را در یکی از نرم‌افزارهای زیر وارد کنید:
+#### مرحله ۵: اتصال
+لینک را در یکی از نرم‌افزارهای زیر وارد کنید:
 - **V2rayNG** (اندروید)
-- **Hiddify** (اندروید، ویندوز، مک، لینوکس)
-- **Streisand** (ویندوز، مک، لینوکس)
-- **Nekoray** (ویندوز، لینوکس، مک)
+- **Hiddify** (اندروید، ویندوز، مک)
+- **Streisand** (ویندوز، مک)
+- **Nekobox** (ویندوز)
 
 ---
 
-### ⏰ مدیریت ساعات رایگان گیت‌هاب
+### ⏰ مدیریت ساعات و حجم (بخش فنی)
 
-گیت‌هاب به هر اکانت رایگان ماهانه **۱۲۰ core-hour** هدیه می‌دهد:
+GitHub Codespaces برای حساب‌های رایگان، **ماهیانه ۶۰ ساعت** (با ماشین ۲ هسته‌ای) ارائه می‌دهد. **امکان دریافت ماشین ۱ هسته وجود ندارد.**
 
-| نوع ماشین | تعداد هسته | ساعت مصرف واقعی در ماه |
-|:---:|:---:|:---:|
-| استاندارد (پیش‌فرض) | ۲ هسته | **۶۰ ساعت** |
-| اقتصادی (نیازمند تغییر دستی) | ۱ هسته | **۱۲۰ ساعت** |
+#### نحوه جلوگیری از هدررفت سهمیه (ساعت و فضا):
 
-**نکات مدیریت مصرف:**
-- ✅ همیشه بعد از اتمام کار، کداسپیس را **Stop** یا **Delete** کنید.
-- ✅ **Stop** فقط مصرف ساعت را متوقف می‌کند، اما فضای ذخیره‌سازی مصرف می‌کند.
-- ✅ **Delete** همه چیز را آزاد می‌کند (ساعت و فضا).
-- ✅ برای استفاده بیشتر، می‌توانید از چند اکانت گیت‌هاب مجزا استفاده کنید.
+| عملیات | تأثیر بر ساعت | تأثیر بر فضای ذخیره‌سازی |
+| :--- | :---: | :---: |
+| **Stop** (متوقف کردن) | ✅ متوقف می‌شود | ❌ همچنان مصرف می‌شود |
+| **Delete** (حذف کامل) | ✅ متوقف می‌شود | ✅ متوقف می‌شود |
+
+- **Stop** فقط اجرای ماشین را متوقف می‌کند، اما فایل‌های شما روی دیسک گیت‌هاب باقی می‌مانند و از سهمیه ۱۵ گیگابایت شما کم می‌شوند.
+- **Delete** کل محیط را حذف می‌کند و هم ساعت و هم فضا را آزاد می‌سازد.
+
+> ✅ **نکته:** برای استفاده بهینه، پس از هر بار کار، Codespace را **Delete** کنید و دفعه بعد دوباره بسازید.
 
 ---
 
 ### 🛠️ بخش تخصصی (برای کاربران حرفه‌ای)
 
-#### تغییر به ماشین ۱ هسته‌ای (افزایش ساعت به ۱۲۰ ساعت):
-فایل `.devcontainer/devcontainer.json` را ویرایش کرده و این بخش را اضافه کنید:
+#### تغییر حداقل منابع (در صورت نیاز):
+در فایل `.devcontainer/devcontainer.json` می‌توانید حداقل نیازمندی را افزایش دهید:
 ```json
 "hostRequirements": {
-   "cpus": 1
+   "cpus": 4,
+   "memory": "8gb",
+   "storage": "64gb"
 }
+```
+> توجه: ماشین‌های قوی‌تر سهمیه ماهانه کمتری دارند (مثلاً ماشین ۴ هسته = ۳۰ ساعت).
+
+#### همگام‌سازی با پروژه اصلی (دریافت آپدیت):
+در صفحه فورک خود، دکمه **Sync fork** را بزنید.
+
+---
+
+### ⚠️ محدودیت‌ها
+
+| مورد | مقدار |
+| :--- | :---: |
+| ساعات رایگان ماهانه (ماشین ۲ هسته) | ۶۰ ساعت |
+| فضای ذخیره‌سازی رایگان | ۱۵ گیگابایت |
+| حداقل ماشین در دسترس | ۲ هسته |
+
+---
+
+<p align="center">
+  <b>MRH-G2Ray</b><br/>
+  <sub>نسخه ۱.۰.۰</sub>
+</p>
+
+</div>
